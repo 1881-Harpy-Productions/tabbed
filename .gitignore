@@ -1,0 +1,8 @@
+surf
+config.h
+*.o
+*.so
+*.diff
+*.rej
+*.orig
+
