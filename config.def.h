@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char font[]        = "monospace:size=9";
-static const char* normbgcolor  = "#222222";
-static const char* normfgcolor  = "#cccccc";
-static const char* selbgcolor   = "#555555";
-static const char* selfgcolor   = "#ffffff";
-static const char* urgbgcolor   = "#111111";
-static const char* urgfgcolor   = "#cc0000";
+static const char font[]        = "JetBrains-mono:size=9";
+static const char* normbgcolor  = "#202020";
+static const char* normfgcolor  = "#a0a0a0";
+static const char* selbgcolor   = "#c03030";
+static const char* selfgcolor   = "#404040";
+static const char* urgbgcolor   = "#ff0000";
+static const char* urgfgcolor   = "#202020";
 static const char before[]      = "<";
 static const char after[]       = ">";
 static const char titletrim[]   = "...";
