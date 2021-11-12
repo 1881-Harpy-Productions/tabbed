@@ -7,9 +7,11 @@ VERSION = 0.6
 PREFIX = /usr/local
 MANPREFIX = ${PREFIX}/share/man
 
-X11INC = /usr/X11R6/include
-X11LIB = /usr/X11R6/lib
-
+#X11INC = /usr/X11R6/include
+#X11LIB = /usr/X11R6/lib
+# Freebsd
+X11INC = /usr/local/include
+X11LIB = /usr/local/lib
 # freetype
 FREETYPELIBS = -lfontconfig -lXft
 #FREETYPEINC = /usr/include/freetype2
