@@ -23,13 +23,13 @@ INCS = -I. -I/usr/include -I$(X11INC) -I${FREETYPEINC}
 LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${FREETYPELIBS}
 
 # flags
-CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE #-D_FORTIFY_SOURCE=2 -fstack-protector-strong -fPIE -fPIC
-CFLAGS = -std=c99 -pedantic -Wall -Os -march=native -mtune=native ${INCS} ${CPPFLAGS}
-LDFLAGS = -s ${LIBS} #-Wl,-z,relro,-z,now
+CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE 
+CFLAGS = -std=c99 -pedantic -Wall -O3 -fno-plt -march=native -mtune=native ${INCS} ${CPPFLAGS}
+LDFLAGS = -s ${LIBS} -Wl,--sort-common,--as-needed
 
 # Solaris
 #CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"
 #LDFLAGS = ${LIBS}
 
 # compiler and linker
-CC = clang
+CC = clang13
