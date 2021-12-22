@@ -24,8 +24,8 @@ LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${FREETYPELIBS}
 
 # flags
 CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE 
-CFLAGS = -std=c99 -pedantic -Wall -O3 -fno-plt -march=native -mtune=native ${INCS} ${CPPFLAGS}
-LDFLAGS = -s ${LIBS} -Wl,--sort-common,--as-needed
+CFLAGS = -std=c99 -pedantic -Wall -O2 -march=native -mtune=native ${INCS} ${CPPFLAGS}
+LDFLAGS = -s ${LIBS} 
 
 # Solaris
 #CFLAGS = -fast ${INCS} -DVERSION=\"${VERSION}\"
